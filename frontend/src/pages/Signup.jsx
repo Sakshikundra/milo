@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-
+import { useNavigate } from "react-router-dom";
 function Signup() {
   const [showPassword, setShowPassword] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <div className="relative min-h-[140vh] w-full overflow-x-hidden">
       {/* ======================== BACKGROUND ======================== */}
@@ -82,6 +82,7 @@ function Signup() {
             >
               Register
             </button>
+            <p className="text-white text-18px p-4 cursor-pointer ">Already have an account ?            <span className="text-indigo-500 p-8 "onClick={()=>navigate("/Signin")}>Sign In</span></p>
 
             {/* Subtle cyan underline accent */}
             <div className="h-[2px] w-24 bg-gradient-to-r from-cyan-400 to-transparent rounded-full mt-2" />
@@ -95,4 +96,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default Signup;1
