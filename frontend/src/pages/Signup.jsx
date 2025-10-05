@@ -28,7 +28,7 @@ function Signup() {
 
       if (response.ok && result.success) {
         alert("Signup successful!");
-        navigate("/login");
+        navigate("/signing");
       } else {
         setErr(result.message || "Signup failed, try again!");
       }
