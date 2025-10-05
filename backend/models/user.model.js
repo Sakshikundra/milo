@@ -9,6 +9,10 @@ const userSchema=new mongoose.Schema({
         required:true
 
     },
+    password:{
+        type:String,
+        required:true
+    },
     assistantName:{
         type:String
     },
@@ -16,3 +20,6 @@ const userSchema=new mongoose.Schema({
         {type:String}
     ]
 },{timestamps:true})
+
+const User=mongoose.model("User",userSchema);
+export default User;

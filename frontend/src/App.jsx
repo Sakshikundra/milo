@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Signup from "./pages/Signup";
-import Signin from "./pages/Signin";
+import Signin from "./pages/Signin.jsx";
 import Home from "./pages/home";
 
 function App() {

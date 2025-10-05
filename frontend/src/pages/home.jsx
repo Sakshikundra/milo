@@ -1,8 +1,7 @@
-function Home() {  
-    return (        
+import React from "react"; // import nahi tha
 
-        <div    
-        > home </div>    
-    ); 
+export default function Home() {
+    return (
+        <div>Home Page</div>
+    )
 }
-export default Home;
